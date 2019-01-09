@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+import "github.com/bakaoh/protoc-gen-zpi/extension/options.proto";
+
+package voucher;
+
+enum MoneySource {
+    option (zpi.enum_in) = true;
+    SOURCE_INVALID = 0;
+    SOURCE_BANK = 1;
+    SOURCE_WALLET = 2;
+}
+
+enum ServiceType {
+    option (zpi.enum_in) = true;
+    SERVICE_INVALID = 0;
+    SERVICE_TRANSFER = 1;
+    SERVICE_REQUEST = 2;
+    SERVICE_REQUESTN = 3;
+    SERVICE_REDPACKET = 4;
+    SERVICE_REDPACKETN = 5;
+    SERVICE_BANKMAPPING = 6;
+    SERVICE_BANKTOPUP = 7;
+    SERVICE_BANKWITHDRAW = 8;
+    SERVICE_TOPUP = 9;
+    SERVICE_PHONECARD = 10;
+}

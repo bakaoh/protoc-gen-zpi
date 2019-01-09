@@ -7,5 +7,5 @@ import "google/protobuf/descriptor.proto";
 option go_package = "extension";
 
 extend google.protobuf.EnumOptions {
-    bool zpi_in = 126361;
+    bool enum_in = 126361;
 }
